@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     this->setMaximumSize(this->size());
     this->setMinimumSize(this->size());
-    this->setWindowTitle(tr("霹雳五笔跟打器"));
+    this->setWindowTitle(tr("Wubi Typer"));
     ui->textEdit_course->setHtml("");
 
     //样式设置

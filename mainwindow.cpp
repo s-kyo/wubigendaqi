@@ -259,7 +259,7 @@ void MainWindow::readDi(QString filePath){
         if (fi->isFile()) {
             filePath = diPath;
         } else {
-            filePath = ":/source/data/di.txt";
+            filePath = "data/di.txt";
         }
     }
     WFileInfo *fileInfo = new WFileInfo;
@@ -541,7 +541,7 @@ void MainWindow::changeStyle(){
     if (QFile::exists(QCoreApplication::applicationDirPath() + "/style/style.qss")){
         stylePath = QCoreApplication::applicationDirPath() + "/style/style.qss";
     } else {
-        stylePath = ":/source/style/style_default.qss";
+        stylePath = "style/style_default.qss";
         QFile::copy(stylePath, QCoreApplication::applicationDirPath() + "/style/style.qss");
     }
 
